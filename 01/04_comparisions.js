@@ -12,6 +12,15 @@
 // console.log(null >= 0);
 // console.log(null == 0);
 
-console.log(undefined > 0);
-console.log(undefined == 0);
-console.log(undefined >= 0);
+// console.log(undefined > 0);
+// console.log(undefined == 0);
+// console.log(undefined >= 0);
+
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack(premetive) copy , heap (non-premetive) reference
+
+let myYouTubeNsme = "codeCrafters";
