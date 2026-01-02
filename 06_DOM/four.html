@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai our Code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage (LanguageName){
+        const  li = document.createElement('li');
+        li.innerHTML = `${LanguageName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage('python')
+    addLanguage('Typescript')
+
+    function addoptilangugae (LanguageName) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(LanguageName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addoptilangugae('asjdb')
+    addoptilangugae('asjdb')
+
+    // EDIT
+    const secondlanguage = document.querySelector('li:nth-child(2)')
+    // secondlanguage.innerHTML = "not you"
+
+    const newLi = document.createElement('li')
+    newLi.textContent = 'this work slightly differently'
+    secondlanguage.replaceWith(newLi)
+
+
+    // edit 
+    const firstlanguage = document.querySelector('li:first-child')
+    firstlanguage.outerHTML = '<li> typescript</li>'
+
+    // remove 
+    const lastlanguage = document.querySelector('li:last-child')
+    lastlanguage.remove()
+
+
+</script>
+</html>
